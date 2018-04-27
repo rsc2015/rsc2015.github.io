@@ -1,16 +1,293 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Personal Story</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="main.js"></script>
+    <title>Rohini Chavan | Design Portfolio | UX/UI Designer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="UX Designer based in Nashville">
+    <meta name="keywords" content="UX Designer, ux, design, web design, ui, sketch">
+    <meta name="author" content="Rohini Chavan">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
 </head>
-<body>
-    <header><nav></nav></header>
-    <main></main>
-    <footer></footer>
+<!-- <body data-spy="scroll" data-target="#check-scroll" cz-shortcut-listen="true">
+	
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+		</script> -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
+		<!-- <script href="lib/bootstrap/dist/css/bootstrap.min.css"></script>  -->
+		
+
+	<!-- Smooth scroll -->
+	<script>
+	$(function() {
+	  		$('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html, body').animate({
+			          scrollTop: target.offset().top
+			        }, 800);
+			        return false;
+			      }
+			    }
+			  });
+			});
+	</script>
+	<!-- Change active navbar -->
+<script>
+	$('.navbar li').click(function(e) {
+    $('.navbar li.active').removeClass('active');
+    var $this = $(this);
+    if (!$this.hasClass('active')) {
+        $this.addClass('active');
+    }
+    e.preventDefault();
+});
+</script>
+	<!-- Navbar -->
+<section>
+	<nav class="navbar navbar-expand-sm .bg-* navbar-dark fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<a class="navbar-brand portfolio-title" href="#home">ROHINI CHAVAN</a>
+			</div>
+			<div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
+			<ul class="navbar-nav navbar-right navbar-list ">
+			  <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a> </li>
+			  <li class="nav-item"><a class="nav-link" href="resume.html">RESUME</a></li>
+			</ul>
+		   </div>
+		</div>
+	</nav>
+</section>
+	<!-- <section>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar top-bar"></span>
+				        <span class="icon-bar middle-bar"></span>
+				        <span class="icon-bar bottom-bar"></span> 
+				     </button>
+					<a href="#home" class="portfolio-title">ROHINI CHAVAN</a>
+				</div>
+				<div id="check-scroll">
+					<div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
+						<ul class="nav navbar-nav navbar-right navbar-list">
+							<li class="navbar-item active"><a class="navbar-link" href="#home">WORK</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="about.html">ABOUT</a></li>
+							<li class="navbar-item"><a class="navbar-link" href="resume.html">RESUME</a></li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</section> -->
+	<!-- Homepage -->
+<section id="home">
+	<div class="container-fluid homepage">
+		<section class="header">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1 class="header display-4">UX/UI Designer</h1>
+					<h4>Nashville TN</h4><br>
+					<blockquote class="blockquote">
+							<p class="mb-0">Design is not what it looks like and feels like.<br> Design is how it works.</p>
+							<footer class="blockquote-footer"> Steve Jobs</footer>
+							<!-- <cite title="Source Title">Source Title</cite> -->
+					</blockquote>
+					<!-- <p class="sub-head">Design is not what it looks like and feels like.<br> Design is how it works. -Steve Jobs</p> -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Social Links -->
+		<div class="row ">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecolumn ">
+				<ul class="social-links d-flex justify-content-center">
+					<li><a target="_blank" href="https://www.linkedin.com/in/rohinichavan/"><img src="images/icons/linkedin.svg" class="linkedin-align-top" alt="linkedin" height="30" width="30"></a></li>
+					<li><a target="_blank" href="https://www.github.com/rsc2015"><img src="images/icons/github-logo.svg" alt="github" height="30" width="30"></a></li>
+					<li><a target="_blank" href="https://dribbble.com/rsc2015"><img src="images/icons/dribbble-icon.svg" alt="dribbble" height="30" width="30"></a></li>
+					
+					<li><a target="_blank" href="mailto:rohinichavan@gmail.com"><img src="images/icons/envelope.svg" alt="email" height="28" width="28"></a></li>
+				</ul><br>
+				<a href="#projects" class="d-flex justify-content-center"><img src="images/icons/arrow-down-sign-to-navigate.svg" class="arrow" alt="arrow" height="30" width="30"></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <div class="container">
+	<section class="work" id="projects">
+			
+		<div class="row">
+			<div class="col-sm-6 col-md-8 col-lg-8">
+				<h4>Concept Project &nbsp;|&nbsp; 2017</h4>
+				<h1>Enabling the voice of bicyclists</h1>
+				<p class="desc">A digital platform for SFBC to empower bicyclists of San Francisco.</p>
+				<p class="desc-areas">Research / UI Design / Prototype</p>
+				<div class="button-animate">
+					<a href="sfbc-casestudy.html">
+						<span class="outside">
+							<span class="inside">VIEW CASE STUDY</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-4">
+				<a href="sfbc-casestudy.html" class="casestudy-image-sfbc"></a>
+			</div>		
+		</div>
+	</section> -->
+	<!-- <section class="work">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<h4>Client: Brightwheel &nbsp;|&nbsp; 2017</h4>
+				<h1>Understanding early childhood education</h1>
+				<p class="desc">A module to help pre-kindergarten teachers in lesson planning and assessment.</p>
+				<p class="desc-areas">Research / UI Design</p>
+				<div class="button-animate">
+					<a href="brightwheel-casestudy.html">
+						<span class="outside">
+							<span class="inside">VIEW CASE STUDY</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<a href="brightwheel-casestudy.html" class="casestudy-image-brightwheel"></a>
+			</div>
+		</div>
+	</section>
+	<section class="work">
+		<div class="row">
+			<div class="col-sm-6 col-md-8 col-lg-8">
+				<h4>Hackathon Project &nbsp;|&nbsp; 2017</h4>
+				<h1>Bridging the gap between local restaurants and distributors</h1>
+				<p class="desc">A DocuSign powered mobile platform to digitize the purchasing process between local restaurant owners and distributors.</p>
+				<p class="desc-areas">UI Design</p>
+				<div class="button-animate">
+					<a href="stockpyle-casestudy.html">
+						<span class="outside">
+							<span class="inside">VIEW CASE STUDY</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 col-lg-4">
+				<a href="stockpyle-casestudy.html" class="casestudy-image-stockpyle"></a>
+			</div>
+		
+	</div>
+	</section> </div>-->
+	<section id="what-we-do">
+		<div class="section-content" id="projects">
+			<div class="container" >
+				<h2>What we do</h2>
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui accusantium commodi non quod mollitia animi, totam quia labore ex est ut delectus consectetur explicabo eveniet maiores, cumque aut repudiandae. Natus!</p>
+			
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card-group">
+							<div class="card">
+								<div class="card-block">
+									<h4 class="card-title">Strategy &amp; Planning</h4>
+									<h6 class="card-subtitle">Support card subtitle</h6>
+								</div>
+								<img src="img/chalkboard.jpg" alt="a chalkboard">
+								<div class="card-block">
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-block">
+									<h4 class="card-title">Creative &amp; Design</h4>
+									<h6 class="card-subtitle">Support card subtitle</h6>
+								</div>
+								<img src="img/working.jpg" alt="working on a laptop">
+								<div class="card-block">
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium, numquam voluptates velit, dicta maiores dolor quo expedita.</p>
+									<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-block">
+									<h4 class="card-title">Programming &amp; Technical</h4>
+									<h6 class="card-subtitle">Support card subtitle</h6>
+								</div>
+								<img src="img/programming.jpg" alt="fingers typing on a keyboard">
+								<div class="card-block">
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
+									<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+   </section>
+
+   <section id="about">
+	<div class="section-content">
+		<div class="container">
+			<div class="col-md-6">
+				<div class="about-text">
+					<h3>About me</h3>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima culpa nostrum voluptates praesentium quia, quae, dolor aperiam possimus architecto, tempore unde! Quasi fugit voluptate, maiores adipisci commodi nemo rem cumque.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eum mollitia sit dolorem autem qui possimus ex voluptate, voluptatibus iste unde numquam illum, molestiae reprehenderit, eligendi. Illum quod esse voluptatibus.</p>
+					
+					<h5>Follow me on the web</h5>
+					<button href="" type="button" class="btn btn-sm  btn-secondary-outline">twitter</button>
+					<button href="" type="button" class="btn btn-sm  btn-secondary-outline">facebook</button>
+					<button href="" type="button" class="btn btn-sm  btn-secondary-outline">youtube</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<footer class="footer">
+      <div class="container-fluid">
+      	<div class="row">
+      		<div class="col-xs-7 col-sm-7 col-md-8 col-lg-8">
+	        	<p><span class="text-size-footer">© <script type="text/javascript">
+  					document.write(new Date().getFullYear());
+					</script> Designed &amp; Developed by Rohini Chavan</span></p>
+	    	</div>
+	    	<div class="col-xs-5 col-sm-5 col-md-4 col-lg-4">
+	        	<ul class="social-links-footer">
+					<li><a target="_blank" href="https://www.linkedin.com/in/rohinichavan/"><img src="css/icons/linkedin-grey.svg" class="linkedin-align" alt="linkedin"></a></li>
+					<li><a target="_blank" href="https://dribbble.com/kins4"><img src="css/icons/dribbble-grey.svg" alt="dribbble" class="sl-footer"></a></li>
+					<li><a target="_blank" href="https://www.behance.net/kins4"><img src="css/icons/behance-grey.svg" alt="behance" class="sl-footer"></a></li>
+					<li><a target="_blank" href="mailto:rohinichavan@gmail.com"><img src="css/icons/email-grey.svg" alt="email" class="sl-footer"></a></li>
+				</ul>
+			</div>
+      </div>
+    </div></footer>
+   
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-</html>
+<!-- <script src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+    </html>

@@ -1,0 +1,42 @@
+.navbar {
+  background: #E3C4B4; }
+
+#home {
+  background: #E3C4B4; }
+
+.header {
+  padding-top: 90px;
+  text-align: center; }
+
+.social-links {
+  margin: auto; }
+
+.social-links > li {
+  padding-right: 45px !important;
+  padding-left: 45px !important;
+  float: left;
+  list-style-type: none; }
+
+.social-links {
+  padding: 2rem 0; }
+
+.social-links > ul {
+  display: inline-block; }
+
+#projects {
+  margin: auto;
+  padding-bottom: 4rem; }
+
+.section-content {
+  padding: 6rem 0; }
+
+.about-text {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 1.875rem; }
+
+#about {
+  background: url("images/girlincar.jpg") center center no-repeat;
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */
