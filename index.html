@@ -11,100 +11,62 @@
     <meta name="HandheldFriendly" content="true">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
- <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-	<!-- <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"> -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="icon" type="image/png" href="images/icons/favicon.png">
-</head>
-<!-- <body data-spy="scroll" data-target="#check-scroll" cz-shortcut-listen="true">
+
+ <body data-spy="scroll" data-target="#check-scroll" cz-shortcut-listen="true">
 	
-		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<!-- <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-		</script> -->
-		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  -->
-		<!-- <script href="lib/bootstrap/dist/css/bootstrap.min.css"></script>  -->
+		</script> 
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<script href="lib/bootstrap/dist/css/bootstrap.min.css"></script>  -->
 		
 
-	<!-- Smooth scroll -->
-	<!-- <script>
-	$(function() {
-	  		$('a[href*="#"]:not([href="#"])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html, body').animate({
-			          scrollTop: target.offset().top
-			        }, 800);
-			        return false;
-			      }
-			    }
-			  });
-			});
-	</script>
-	Change active navbar -->
-<!-- <script>
-	$('.navbar li').click(function(e) {
-    $('.navbar li.active').removeClass('active');
-    var $this = $(this);
-    if (!$this.hasClass('active')) {
-        $this.addClass('active');
-    }
-    e.preventDefault();
-});
-</script> --> 
+	
 	<!-- Navbar -->
-<section>
-	<nav class="navbar navbar-expand-sm .bg-* navbar-dark fixed-top">
+<section id="navbar-top">
+	<nav class="navbar navbar-expand-md navbar-light fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 			<a class="navbar-brand portfolio-title" href="#home">ROHINI CHAVAN</a>
+			
 			</div>
-			<div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
-			<ul class="navbar-nav navbar-right navbar-list ">
-			  <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-			  <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a> </li>
-			  <li class="nav-item"><a class="nav-link" href="resume.html">RESUME</a></li>
+			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+			<div class="navbar-collapse collapse" id="collapsibleNavbar" aria-expanded="false" style="height: 0px;">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item">
+				  <a class="nav-link" href="#projects">PROJECTS</a></li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="#about">ABOUT</a> </li>
+			  <li class="nav-item">
+				  <a class="nav-link" href="#myModal" data-toggle="modal">RESUME</a></li>
+				  
 			</ul>
 		   </div>
 		</div>
 	</nav>
+	
+
 </section>
-	<!-- <section>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar top-bar"></span>
-				        <span class="icon-bar middle-bar"></span>
-				        <span class="icon-bar bottom-bar"></span> 
-				     </button>
-					<a href="#home" class="portfolio-title">ROHINI CHAVAN</a>
-				</div>
-				<div id="check-scroll">
-					<div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
-						<ul class="nav navbar-nav navbar-right navbar-list">
-							<li class="navbar-item active"><a class="navbar-link" href="#home">WORK</a></li>
-							<li class="navbar-item"><a class="navbar-link" href="about.html">ABOUT</a></li>
-							<li class="navbar-item"><a class="navbar-link" href="resume.html">RESUME</a></li>	
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</section> -->
+
 	<!-- Homepage -->
 <section id="home">
 	<div class="container-fluid homepage">
 		<section class="header">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h1 class="header display-4">UX/UI Designer</h1>
+						<h1 class="header display-2">ROHINI CHAVAN</h1>
+					<h1 class="display-5">UX/UI Designer</h2>
 					<h4>Nashville TN</h4><br>
 					<blockquote class="blockquote">
 							<p class="mb-0">Design is not what it looks like and feels like.<br> Design is how it works.</p>
@@ -127,6 +89,9 @@
 					<li><a target="_blank" href="mailto:rohinichavan@gmail.com"><img src="images/icons/envelope.svg" alt="email" height="28" width="28"></a></li>
 				</ul><br>
 				<a href="#projects" class="d-flex justify-content-center"><img src="images/icons/arrow-down-sign-to-navigate.svg" class="arrow" alt="arrow" height="30" width="30"></a>
+			
+			 <!-- <button href="#projects" class="d-flex justify-content-center">VIEW</button> -->
+			
 			</div>
 		</div>
 	</div>
@@ -152,8 +117,8 @@
 				<a href="sfbc-casestudy.html" class="casestudy-image-sfbc"></a>
 			</div>		
 		</div>
-	</section> -->
-	<!-- <section class="work">
+	</section> 
+ <section class="work">
 		<div class="row">
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<h4>Client: Brightwheel &nbsp;|&nbsp; 2017</h4>
@@ -197,45 +162,63 @@
 	<section id="what-we-do">
 		<div class="section-content" id="projects">
 			<div class="container" >
-				<h2>What we do</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui accusantium commodi non quod mollitia animi, totam quia labore ex est ut delectus consectetur explicabo eveniet maiores, cumque aut repudiandae. Natus!</p>
+				<h2>Some Of My Projects</h2>
+				<p class="lead">Following are the projects that demonstrate my UX, UI skills. Please click on the learn more button to view the project details.</p>
 			
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="card-group">
 							<div class="card">
-								<div class="card-block">
-									<h4 class="card-title">Strategy &amp; Planning</h4>
-									<h6 class="card-subtitle">Support card subtitle</h6>
+								<div class="card-body">
+									<h4 class="card-title">Project: 1</h4>
+									<h6 class="card-subtitle mb-2 text-muted">Donors Mobile App</h6>
+									
 								</div>
-								<img src="" alt="a chalkboard">
-								<div class="card-block">
-									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-									<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+								<div class="card-body">
+								<img class="card-img-top" src="../images/icons/donate1.png" alt="donors app logo">
+							</div>
+								<div class="card-body">
+										
+									<p class="card-text">Rare Genomics Institute Donors app connects rare disease patients with donors using user engagementcentric features. In order to increase reach and engagement, ‘gamification’ techniques are integrated.</p>
+									<!-- <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button> -->
+									<button type="button"  class="btn btn-outline-success"><a href="#portfolioModal1" data-toggle="modal">learn more</a></button>
 								</div>
 							</div>
 
 							<div class="card">
-								<div class="card-block">
-									<h4 class="card-title">Creative &amp; Design</h4>
-									<h6 class="card-subtitle">Support card subtitle</h6>
+								<div class="card-body">
+									<h4 class="card-title">Project: 2</h4>
+									<h6 class="card-subtitle mb-2 text-muted">Patients Mobile App</h6>
+									
 								</div>
-								<img src="" alt="working on a laptop">
-								<div class="card-block">
-									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium, numquam voluptates velit, dicta maiores dolor quo expedita.</p>
-									<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+								<div class="card-body">
+								<img class="card-img-top" src="../images/icons/RareGenomicsLogo.png" alt="Patients Mobile App logo">
+							</div>
+								<div class="card-body">
+										
+										<br>	
+									<p class="card-text">The patients’ mobile app allows rare disease patients to manage all their health-related resources in one place and access them from anywhere.</p>
+									<!-- <button type="button" class="btn btn-outline-success" data-toggle="collapse" data-target="#myModal">learn more</button> -->
+									<button type="button"  class="btn btn-outline-success"><a href="#portfolioModal2" data-toggle="modal">learn more</a></button>
 								</div>
 							</div>
 
 							<div class="card">
-								<div class="card-block">
-									<h4 class="card-title">Programming &amp; Technical</h4>
-									<h6 class="card-subtitle">Support card subtitle</h6>
+								<div class="card-body">
+									<h4 class="card-title">Symptom Tracker App</h4>
+									<h6 class="card-subtitle mb-2 text-muted">Support card subtitle</h6>
+									
 								</div>
-								<img src="" alt="fingers typing on a keyboard">
-								<div class="card-block">
+								<div class="card-body">
+										<img class="card-img-top" src="" alt="Symptom Tracker App logo">
+										
+									</div>
+								
+								<div class="card-body">
+										
 									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus accusantium.</p>
-									<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+									<!-- <button type="button" class="btn btn-outline-success" data-toggle="collapse" data-target="#botchat">learn more</button> -->
+									<button type="button"  class="btn btn-outline-success"><a href="#portfolioModal3" data-toggle="modal">learn more</a></button>
 								</div>
 							</div>
 						</div>
@@ -251,39 +234,139 @@
 			<div class="col-md-6">
 				<div class="about-text">
 					<h3>About me</h3>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima culpa nostrum voluptates praesentium quia, quae, dolor aperiam possimus architecto, tempore unde! Quasi fugit voluptate, maiores adipisci commodi nemo rem cumque.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eum mollitia sit dolorem autem qui possimus ex voluptate, voluptatibus iste unde numquam illum, molestiae reprehenderit, eligendi. Illum quod esse voluptatibus.</p>
+					<p class="lead">By education, I am an architect, who has evolved into web's version of an architect - UX Designer. I have always been a creative person, who aims to design functional, smart and aesthetically pleasing designs. My desire to learn how websites work, led me to the path of teaching myself web-design, UX design and I continue to learn something new every day.</p>
+					<p>Currently, I am working as a UX Designer for a Non-Profit Organization. </p>
 					
-					<h5>Follow me on the web</h5>
-					<button href="" type="button" class="btn btn-sm  btn-secondary-outline">twitter</button>
-					<button href="" type="button" class="btn btn-sm  btn-secondary-outline">facebook</button>
-					<button href="" type="button" class="btn btn-sm  btn-secondary-outline">youtube</button>
+					<h5>Follow me on the web
+							<a target="_blank" href="https://twitter.com/chav_ro"><img src="images/icons/twitter-icon.svg" alt="twitter" height="30" width="30"></a></h5>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<!-- <section id="resume"> -->
+		<!-- <div class="container-fluid homepage">
+				
+					<div class="row"> -->
+	<!-- <div class="section-content">
+		<div class="container">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+		
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<!-- <h4 class="modal-title">Modal Header</h4> -->
+							</div>
+							<div class="modal-body">
+		
+								<embed src="../images/Resume Of Rohini Chavan.pdf"
+									   frameborder="0" width="100%" height="980px">
+		
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+				</div>
+			<!-- </div>
+				</div>
+			</div>
+		
+</section> -->
 
 
 	<footer class="footer">
       <div class="container-fluid">
       	<div class="row">
-      		<div class="col-xs-7 col-sm-7 col-md-8 col-lg-8">
-	        	<p><span class="text-size-footer">© <script type="text/javascript">
+      		<!-- <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8"> -->
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        	<p><span class="text-size-footer d-flex justify-content-center">© <script type="text/javascript">
   					document.write(new Date().getFullYear());
 					</script> Designed &amp; Developed by Rohini Chavan</span></p>
 	    	</div>
-	    	<div class="col-xs-5 col-sm-5 col-md-4 col-lg-4">
-	        	<ul class="social-links-footer">
-					<li><a target="_blank" href="https://www.linkedin.com/in/rohinichavan/"><img src="" class="linkedin-align" alt="linkedin"></a></li>
-					<li><a target="_blank" href="https://dribbble.com/kins4"><img src="" alt="dribbble" class="sl-footer"></a></li>
-					<li><a target="_blank" href="https://www.behance.net/kins4"><img src="" alt="behance" class="sl-footer"></a></li>
-					<li><a target="_blank" href="mailto:rohinichavan@gmail.com"><img src="" alt="email" class="sl-footer"></a></li>
+	    	<!-- <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4"> -->
+					<!-- <div class="col-xs-7 col-sm-7 col-md-8 col-lg-8"> -->
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	        	<ul class="social-links-footer d-flex justify-content-center">
+					<li><a target="_blank" href="https://www.linkedin.com/in/rohinichavan/"><img src="images/icons/linkedin.svg" class="linkedin-align-top" alt="linkedin" height="30" width="30"></a></li>
+					<li><a target="_blank" href="https://www.github.com/rsc2015"><img src="images/icons/github-logo.svg" alt="github" height="30" width="30"></a></li>
+					<li><a target="_blank" href="https://dribbble.com/rsc2015"><img src="images/icons/dribbble-icon.svg" alt="dribbble" height="30" width="30"></a></li>
+					<li><a target="_blank" href="mailto:rohinichavan@gmail.com"><img src="images/icons/envelope.svg" alt="email" height="28" width="28"></a></li>
 				</ul>
 			</div>
       </div>
-    </div></footer>
+	</div></footer>
+	
+
+	<!-- portfolio modal Rare Genomics Donors app -->
+ 
+
+	<div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-full" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <!-- <h4 class="modal-title">Modal Header</h4> -->
+				</div>
+				<div class="modal-body">
+				  <p>This is a small modal.</p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	<!-- portfolio modal Rare Genomics mobile app -->
+ 
+
+	<div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-full" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <!-- <h4 class="modal-title">Modal Header</h4> -->
+				</div>
+				<div class="modal-body">
+				  <p>This is a small modal.</p>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+   <!-- portfolio modal blog -->
+ 
+
+		<div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-full" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <!-- <h4 class="modal-title">Modal Header</h4> -->
+					</div>
+					<div class="modal-body">
+					  <p>This is a small modal.</p>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			
    
+
+
+
+			  
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -1,8 +1,16 @@
+html,
+body {
+  height: 100%; }
+
 .navbar {
   background: #E3C4B4; }
 
 #home {
-  background: #E3C4B4; }
+  background: #E3C4B4;
+  height: 100%; }
+
+.navbar a {
+  color: black !important; }
 
 .header {
   padding-top: 90px;
@@ -36,7 +44,30 @@
   padding: 1.875rem; }
 
 #about {
-  background: url("images/girlincar.jpg") center center no-repeat;
-  background-size: cover; }
+  background: url("../images/architecture-business-clean-389818 (1).jpg") center center no-repeat;
+  background-size: cover;
+  height: 100%; }
 
+.footer {
+  background: #E3C4B4; }
+
+.social-links-footer > li {
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+  float: left;
+  list-style-type: none;
+  margin: auto; }
+
+.social-links-footer {
+  padding: 2rem 0; }
+
+.social-links-footer > ul {
+  display: inline-block; }
+
+
+  .modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+  
 /*# sourceMappingURL=main.css.map */
